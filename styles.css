@@ -13,6 +13,7 @@ a[href="index.html"]{
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
+    color: purple;
 }
 .button{
     padding: 12px 24px;

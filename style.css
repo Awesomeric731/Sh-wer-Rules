@@ -17,6 +17,7 @@ a[href="index.html"], a[href="shower.html"]{
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
+    color: purple;
 }
 
 a[href="morning.html"], a[href="night.html"]{
