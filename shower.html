@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sh*wers</title>
+        <link rel = "stylesheet" href = "styles.css">
+        <link rel = "icon" type="image/x-icon" href="shower.png">
+    </head>
+    <body class = "body dirty"> 
+        <a href="index.html">Home</a>
+        <h1 id = "header"> Get in there you dirty gremin 🤮🤮🤮</h1>
+        <img id = "img"
+        src = "https://media.istockphoto.com/id/1400295846/photo/jets-of-clean-water-flowing-in-the-shower-cabin.jpg?s=612x612&w=0&k=20&c=NrfegYfTDWC8TzQbllUvABYo4iGWVKC171lCa4PR_Cw="/>
+        <p><button id ="shower" class="button dirty">Take a shower</button></p>
+        <script>
+            const button = document.getElementById("shower");
+            const img = document.getElementById("img")
+            const body = document.body;
+            const header = document.getElementById("header")
+            button.addEventListener("click", () => {
+                button.disabled = true;
+                button.textContent = "Showering...";
+                header.textContent = "A bit longer...";
+                button.classList.remove("dirty", "clean");
+                button.classList.add("cleaning");
+                body.classList.remove("dirty", "clean");
+                body.classList.add("cleaning");
+                img.src = "https://media.istockphoto.com/id/1297707106/photo/man-taking-a-shower-washing-hair-under-water-falling-from-rain-showerhead-in-luxury-walk-in.jpg?s=612x612&w=0&k=20&c=8bJmRxjxc7PwvxpsG7p9ro6RaadtCw15ge-UrCflyZ0=";
+                setTimeout(() => {
+                    img.src = "https://i.pinimg.com/736x/49/62/ee/4962ee8228258c179a707f7371a08d2b.jpg";
+                    button.textContent = "All Clean!"
+                    button.classList.remove("cleaning");
+                    button.classList.add("clean");
+                    body.classList.remove("cleaning");
+                    body.classList.add("clean");
+                    header.textContent = "Looking Fresh!";
+                }, 3000);
+            });
+        </script>
+    </body>
+</html>

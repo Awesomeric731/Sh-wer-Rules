@@ -1,0 +1,17 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+img{
+    width: 500px;
+    border-radius: 10px;
+}
+a[href="index.html"]{
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}

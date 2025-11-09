@@ -1,0 +1,46 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+img{
+    width: 1000px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+a[href="index.html"], a[href="shower.html"]{
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a[href="morning.html"], a[href="night.html"]{
+    display: inline-block;
+    padding: 12px 24px;
+    margin-left: 50px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a[href="morning.html"]{
+    background-color: yellow;
+    color: black;
+}
+
+a[href="night.html"]{
+    background-color: darkblue;
+    color: white;
+}
+
+a[href="shower.html"]{
+    background-color: black;
+    color:red;
+}
