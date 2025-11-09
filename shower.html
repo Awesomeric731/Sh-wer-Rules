@@ -19,7 +19,7 @@
             button.addEventListener("click", () => {
                 button.disabled = true;
                 button.textContent = "Showering...";
-                header.textContent = "A bit longer...";
+                header.textContent = "Now wait 10 minutes...";
                 button.classList.remove("dirty", "clean");
                 button.classList.add("cleaning");
                 body.classList.remove("dirty", "clean");
@@ -32,7 +32,7 @@
                     button.classList.add("clean");
                     body.classList.remove("cleaning");
                     body.classList.add("clean");
-                    header.textContent = "Looking Fresh!";
+                    header.textContent = "JK but if ur showering for less than 10 min 🤨";
                 }, 3000);
             });
         </script>
